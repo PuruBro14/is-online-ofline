@@ -1,25 +1,10 @@
-import { useState,useEffect } from "react";
+import IsInternetWorking from "react-is-internet-working";
+
 function App() {
-  const[onlineStatus,setOnlineStatus]=useState(true);
 
-  const checkOnline=()=>{
-     window.addEventListener("offline", () => {
-       setOnlineStatus(false);
-     });
+  console.log(IsInternetWorking);
 
-     window.addEventListener("online", () => {
-       setOnlineStatus(true);
-     });
-     return onlineStatus;
-  }
-
-  useEffect(()=>{
-   checkOnline();
-  },[])
-
-  const isOnlineStatus = checkOnline();
-
-  if(!isOnlineStatus){
+  if(true){
     return <h1>Your Internet seems to be down,please check your network</h1>;
   }else{
   return (
