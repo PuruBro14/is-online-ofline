@@ -1,4 +1,3 @@
-import './App.css';
 import { useState,useEffect } from "react";
 function App() {
   const[onlineStatus,setOnlineStatus]=useState(true);
@@ -25,7 +24,7 @@ function App() {
   }else{
   return (
     <div>
-       <h1>Your Internet seems to be working fine</h1>;
+       <h1>Your Internet seems to be working fine</h1>
     </div>
   );
   }
