@@ -1,5 +1,5 @@
 {
-  "name": "internet-status",
+  "name": "react-is-internet-available",
   "version": "0.1.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
