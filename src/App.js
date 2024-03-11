@@ -1,5 +1,4 @@
 import useIsInternetWorking from "./useIsInternetWorking";
-
 function App() {
 
   const isInternetWorking=useIsInternetWorking();
