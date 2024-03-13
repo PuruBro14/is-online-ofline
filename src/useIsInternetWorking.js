@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
  const useIsInternetWorking = () => {
       const [onlineStatus, setOnlineStatus] = useState(true);
     window.addEventListener("offline", () => {
